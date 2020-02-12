@@ -1,0 +1,81 @@
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #505050;
+    border-left-width: 0;
+    border-right-width: 0;
+    transition: .3s ease;
+}
+
+.important {
+    background: rgb(12, 100, 201);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.list-item-text {
+    margin-left: 25px;
+    font-size: 20px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.list-item span {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.list-item span:hover {
+    color: red;
+}
+
+.done {
+    text-decoration: line-through;
+    color: red;
+}
+
+.list-item-buttons button {
+    margin: 0 0 0 10px;
+    padding: 3px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font: normal 25px 'ICF';
+    vertical-align: middle;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.list-item-buttons button:first-child {
+    font-size: 35px;
+}
+
+.list-item-buttons button:hover {
+    box-shadow: 0 0 0 3px rgb(22, 138, 214);
+    border-color: transparent;
+}
+
+.list-item-buttons button:first-child:hover {
+    color: rgb(103, 228, 20);
+}
+
+.list-item-buttons button:last-child:hover {
+    color: rgb(236, 19, 12);
+}
+
+.important-active {
+    color: rgb(103, 228, 20);
+    background: rgb(22, 148, 11);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(0, 255, 13, 0.733);
+}

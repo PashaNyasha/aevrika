@@ -1,0 +1,48 @@
+.add-new-item {
+    padding: 5px;
+    background: #464646;
+}
+
+.add-new-item form {
+    display: table;
+    margin: 0 auto;
+}
+
+#add-new,
+.add-button {
+    outline: none;
+    border: 1px solid #505050;
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    transition: .3s ease;
+}
+
+#add-new {
+    margin-right: 5px;
+    text-align: center;
+}
+
+.add-button {
+    font: normal 15px 'ICF';
+    cursor: pointer;
+}
+
+#add-new:focus::placeholder {
+    opacity: 0;
+}
+
+#add-new:focus,
+.add-button:hover {
+    box-shadow: 0 0 0 3px rgb(22, 138, 214);
+    border-color: transparent;
+}
+
+.add-button:active {
+    box-shadow: none;
+    background: rgb(22, 138, 214);
+    color: #fff;
+    transform: scale(.9);
+    transition: .1s ease;
+}

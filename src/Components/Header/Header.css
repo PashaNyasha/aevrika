@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.header .logo,
+.header .performed {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .performed {
+    align-self: flex-end;
+    font-size: 18px;
+}
+
+.header .logo h1,
+.header .performed p {
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}

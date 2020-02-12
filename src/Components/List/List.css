@@ -1,0 +1,22 @@
+.list {
+    height: 350px;
+    overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+    background: rgb(128, 128, 128);
+    scroll-behavior: smooth;
+    width: 5px;
+    border-radius: 5px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: rgb(22, 138, 214);
+    border-radius: 5px;
+}
+
+.list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
